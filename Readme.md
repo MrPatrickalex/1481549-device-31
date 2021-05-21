@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Алексей Сычугов](https://up.htmlacademy.ru/htmlcss/31/user/1481549).
-* Наставник: `Михаил Поданев`.
+* Наставник: `Михаил Поданев`(https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
