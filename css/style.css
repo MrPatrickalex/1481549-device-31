@@ -918,6 +918,15 @@ ul {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.button-to-compare:hover {
+  opacity: 1;
+}
+
+.button-to-compare:active {
+  opacity: 0.2;
 }
 
 /* Pagination Пагинация */
