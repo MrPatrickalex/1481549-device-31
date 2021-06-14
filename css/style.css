@@ -46,12 +46,16 @@
   --special-yellow-dark: #F0C52E;
   --white-30: rgba(255, 255, 255, 0.3);
   --white-60: rgba(255, 255, 255, 0.6);
+  --black-10: rgba(0, 0, 0, 0.1);
   --black-30: rgba(0, 0, 0, 0.3);
   --black-40: rgba(0, 0, 0, 0.4);
   --black-60: rgba(0, 0, 0, 0.6);
   --input-grey: #F2F2F2;
   --input-grey-hover: #EAEAEA;
   --input-invalid: #F6DADA;
+  --filter-header-grey: #DCDCDC;
+  --pagination-grey: #EBEBEB;
+  --pagination-button-grey: #D9D9D9;
 }
 
 /* Общие стили */
@@ -209,18 +213,37 @@ ul {
   background-repeat: no-repeat;
 }
 
+.user-link {
+  background-image: url('../img/icons/user.svg');
+  background-repeat: no-repeat;
+}
+
 .login-link:hover,
 .compare-link:hover,
-.bucket-link:hover {
+.bucket-link:hover,
+.user-link:hover {
   color: var(--black-60);
   opacity: 0.6;
 }
 
 .login-link:active,
 .compare-link:active,
-.bucket-link:active {
+.bucket-link:active,
+.user-link:active {
   color: var(--black-30);
   opacity: 0.3;
+}
+
+.signout-link {
+  opacity: 0.3;
+}
+
+.signout-link:hover {
+  opacity: 1;
+}
+
+.signout-link:active {
+  opacity: 0.6;
 }
 
 .navigation-item {
@@ -528,6 +551,15 @@ ul {
   opacity: 0.3;
 }
 
+
+.footer-login,
+.footer-compare,
+.footer-bucket,
+.footer-user,
+.footer-signout {
+  opacity: 0.7;
+}
+
 .footer-login {
   background-image: url('../img/icons/user-yellow.svg');
   background-repeat: no-repeat;
@@ -543,15 +575,24 @@ ul {
   background-repeat: no-repeat;
 }
 
+.footer-user {
+  background-image: url('../img/icons/user-yellow.svg');
+  background-repeat: no-repeat;
+}
+
 .footer-login:hover,
 .footer-compare:hover,
-.footer-bucket:hover {
-  opacity: 0.6;
+.footer-bucket:hover,
+.footer-user:hover,
+.footer-signout:hover {
+  opacity: 1;
 }
 
 .footer-login:active,
 .footer-compare:active,
-.footer-bucket:active {
+.footer-bucket:active,
+.footer-user:active,
+.footer-signout:active {
   opacity: 0.3;
 }
 
@@ -671,4 +712,240 @@ ul {
 
 .writeus-input:focus::placeholder {
   color: var(--basic-dark);
+}
+
+/* Catalog Каталог */
+
+.catalog-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+/* История, хлебные крошки History */
+
+.catalog-history {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.history-item,
+.history-item a {
+  color: var(--black-30);
+}
+
+.history-item:hover,
+.history-item:hover a {
+  color: var(--black-60);
+}
+
+.history-item:active,
+.history-item:active a {
+  color: var(--black-10);
+}
+
+.history-item:not(:first-child) {
+  background-image: url('../img/icons/arrow.svg');
+  background-repeat: no-repeat;
+}
+
+/* Filters Фильтры */
+
+.catalog-filter {
+  background-color: var(--basic-grey-light);
+  position: relative;
+  z-index: 0;
+}
+
+.filter-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--filter-header-grey);
+}
+
+.filter-legend {
+  margin-top: 200px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filter-fildset {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+.fieldset-wrapper {
+  padding-top: 0px;
+  border-top: 2px solid var(--basic-black);
+}
+
+.filter-label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter-checkbox,
+.filter-radio {
+  display: none;
+}
+
+.filter-checkbox + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='black' stroke-width='2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.07692 10.75L5.38461 12.5L10.4615 17.75L18.9231 9L17.2308 7.25L10.4615 14.25L7.07692 10.75Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:hover + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.filter-checkbox:checked:hover + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.07692 10.75L5.38461 12.5L10.4615 17.75L18.9231 9L17.2308 7.25L10.4615 14.25L7.07692 10.75Z' fill='rgba(0, 0, 0, 0.6)'/%3E%3C/svg%3E");
+}
+
+.filter-radio + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.filter-radio:hover + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3C/svg%3E");
+}
+
+.filter-radio:checked + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11' stroke='black' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='4' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.filter-radio:checked:hover + .filter-label {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='4' fill='rgba(0, 0, 0, 0.6)'/%3E%3C/svg%3E");
+}
+
+/* Sort Сортировка  */
+
+.catalog-sort {
+  background-color: var(--basic-grey-light);
+}
+
+.sort-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sort-link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.sort-link:hover {
+  opacity: 0.6;
+}
+
+.sort-active {
+  opacity: 1;
+}
+
+.sort-up {
+  background-image: url('../img/icons/arrow_up.svg');
+  background-repeat: no-repeat;
+}
+
+.sort-down {
+  background-image: url('../img/icons/arrow_down.svg');
+  background-repeat: no-repeat;
+}
+
+.sort-up,
+.sort-down {
+  opacity: 0.2;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+  opacity: 0.4;
+}
+
+.sort-updown-active {
+  opacity: 1;
+}
+
+/* Products Продукты Товары */
+
+.product-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.product-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.button-to-compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+/* Pagination Пагинация */
+
+.catalog-pagination {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--pagination-grey);
+}
+
+.pagination-backword:hover,
+.pagination-forword:hover {
+  background-color: var(--pagination-button-grey);
+}
+
+.pagination-backword:active,
+.pagination-forword:active {
+  color: var(--black-30);
+}
+
+.pagination-link {
+  opacity: 0.3;
+}
+
+.pagination-link:hover {
+  opacity: 0.6;
 }
