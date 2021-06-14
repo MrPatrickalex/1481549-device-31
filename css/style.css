@@ -296,20 +296,6 @@ ul {
   background-color: var(--basic-white);
 }
 
-.preview-slide:nth-child(1) {
-  background: url('../img/slider/dron.png') no-repeat;
-
-}
-
-.preview-slide:nth-child(2) {
-  background: url('../img/slider/watch.png') no-repeat;
-
-}
-
-.preview-slide:nth-child(3) {
-  background: url('../img/slider/selfi.png') no-repeat;
-}
-
 .preview-slide::before {
   display: block;
   text-align: right;
