@@ -638,16 +638,17 @@ ul {
   border: none;
   background-color: transparent;
   background-image: url('../img/icons/close.svg');
+  opacity: 0.6;
   width: 55px;
   height: 55px;
 }
 
 .popup-close:hover {
-  background-image: url('../img/icons/close-hover.svg');
+  opacity: 1;
 }
 
 .popup-close:active {
-  background-image: url('../img/icons/close-active.svg');
+  opacity: 0.3;
 }
 
 /* Write Us Напишите нам */
