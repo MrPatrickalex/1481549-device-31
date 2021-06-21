@@ -77,6 +77,7 @@ body{
   font-size: 15px;
   line-height: 28px;
   color: var(--basic-black);
+  counter-reset: section;
 }
 
 a {
@@ -94,6 +95,17 @@ ul {
 }
 
 /* Кнопки, ссылки, общие стили */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 .visually-hidden {
   position: absolute;
@@ -171,8 +183,8 @@ ul {
 
 .header-section {
   /* В след. задании переделаю на flex */
-  display: grid;
-  grid-template-columns: 600px 260px 140px 160px;
+  display: flex;
+  /* grid-template-columns: 600px 260px 140px 160px; */
   margin-top: 20px;
   line-height: 20px;
 }
@@ -193,11 +205,11 @@ ul {
 }
 
 .search-wrapper .search-button {
-  display: none;
+  visibility: hidden;
 }
 
 .header-search:focus + .search-button {
-  display: inline-block;
+  visibility: visible;
 }
 
 .header-search {
@@ -240,16 +252,19 @@ ul {
 }
 
 .login-link {
+  margin-left: 320px;
   background-image: url('../img/icons/user.svg');
   background-repeat: no-repeat;
 }
 
 .compare-link {
+  margin-left: 215px;
   background-image: url('../img/icons/compare.svg');
   background-repeat: no-repeat;
 }
 
 .bucket-link {
+  margin-left: 40px;
   background-image: url('../img/icons/bucket.svg');
   background-repeat: no-repeat;
 }
@@ -296,7 +311,9 @@ ul {
 .navigation-list {
   /* В след. задании переделаю на flex */
   display: grid;
-  grid-template-columns: 600px 160px 140px 260px;
+  grid-template-columns: 600px 160px 140px 160px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-list {
@@ -330,6 +347,8 @@ ul {
 .navigation-catalog {
   display: none;
   background-color: var(--special-yellow);
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item:first-child:hover .navigation-catalog {
@@ -393,15 +412,18 @@ ul {
 }
 
 .preview-slide:nth-child(1)::before {
-  content: "01";
+  counter-increment: section;
+  content: "0" counter(section);
 }
 
 .preview-slide:nth-child(2)::before {
-  content: "02";
+  counter-increment: section;
+  content: "0" counter(section);
 }
 
 .preview-slide:nth-child(3)::before {
-  content: "03";
+  counter-increment: section;
+  content: "0" counter(section);
 }
 
 .slide-content {
@@ -464,6 +486,8 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .category-link div {
@@ -499,6 +523,12 @@ ul {
   background-color: var(--basic-grey-light);
   position: relative;
   z-index: 0;
+}
+
+.advantages-toggles,
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-content {
@@ -642,6 +672,8 @@ ul {
   font-weight: 800;
   font-size: 16px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-item::before {
@@ -660,9 +692,11 @@ ul {
   background-color: var(--basic-dark);
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 360px 440px 360px;
+.footer-logo-section,
+.footer-navigation,
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer,
