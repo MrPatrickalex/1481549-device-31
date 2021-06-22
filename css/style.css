@@ -257,6 +257,7 @@ ul {
   background-repeat: no-repeat;
 }
 
+
 .compare-link {
   margin-left: 215px;
   background-image: url('../img/icons/compare.svg');
@@ -270,6 +271,7 @@ ul {
 }
 
 .user-link {
+  margin-left: 215px;
   background-image: url('../img/icons/user.svg');
   background-repeat: no-repeat;
 }
@@ -648,6 +650,8 @@ ul {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  margin: 0;
+  padding: 0;
 }
 
 .about-header::before,
@@ -917,11 +921,19 @@ ul {
 
 /* Catalog Каталог */
 
+.catalog-header-wrapper {
+  width: 1160;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
 .catalog-header {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  margin: 0;
+  padding: 0;
 }
 
 /* История, хлебные крошки History */
@@ -931,6 +943,12 @@ ul {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
+}
+
+.history-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .history-item,
@@ -953,10 +971,40 @@ ul {
   background-repeat: no-repeat;
 }
 
+/* Catalog grid Сетка */
+
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: 700px 1220px;
+}
+
+.filter-wrapper {
+  background-color: var(--basic-grey-light);
+}
+
+.filter-header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--filter-header-grey);
+}
+
+.filter-header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-content-wrapper {
+  width: 268px;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Filters Фильтры */
 
 .catalog-filter {
-  background-color: var(--basic-grey-light);
   position: relative;
   z-index: 0;
 }
@@ -968,7 +1016,6 @@ ul {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: var(--filter-header-grey);
 }
 
 .filter-legend {
