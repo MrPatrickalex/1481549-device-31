@@ -975,7 +975,21 @@ ul {
 
 .catalog-wrapper {
   display: grid;
-  grid-template-columns: 700px 1220px;
+  grid-template-columns: auto 348px 852px auto;
+}
+
+.left-column {
+  background-color: var(--basic-grey-light);
+}
+
+.left-column .column-header {
+  height: 47px;
+  background-color: var(--filter-header-grey);
+}
+
+.right-column .column-header {
+  height: 47px;
+  background-color: var(--basic-grey-light);
 }
 
 .filter-wrapper {
