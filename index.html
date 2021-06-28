@@ -20,11 +20,13 @@
               <h2 class="visually-hidden">Шапка</h2>
               <div class="search-wrapper">
                 <input type="text" id="search-input" placeholder="Поиск по сайту" class="header-search"/>
-                <button type="button" class="search-button">Искать</button>
+                <button type="button" class="search-button">Найти</button>
               </div>
-              <a href="#" class="login-link">Войти</a>
-              <a href="#" class="compare-link">Сравнить</a>
-              <a href="#" class="bucket-link">Корзина</a>
+              <div class="links-wrapper">
+                <a href="#" class="login-link">Войти</a>
+                <a href="#" class="compare-link">Сравнить</a>
+                <a href="#" class="bucket-link">Корзина</a>
+              </div>
             </section>
             <nav class="main-navigation">
               <ul class="navigation-list">
@@ -74,25 +76,27 @@
                   жалит как пчела!
                 </h3>
                 <p class="preview-description">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
                   мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <ul class="slide-toggles">
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 1</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 2</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 3</button></li>
-                </ul>
-                <table class="preview-table">
-                  <tr class="preview-table-head">
-                    <th>Дальность полета</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                  <tr class="preview-table-content">
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                </table>
+                <div class="toggles-wrapper">
+                  <a href="#" class="button preview-more">Подробнее</a>
+                  <ul class="slide-toggles">
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 1</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 2</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 3</button></li>
+                  </ul>
+                </div>
+                <dl class="defenition-list">
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Дальность полета</dt>
+                    <dd class="defenition-description">800 м</dd>
+                  </div>
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Радиус поражения</dt>
+                    <dd class="defenition-description">50 м</dd>
+                  </div>
+                </dl>
               </div>
             </li>
             <li class="preview-slide preview-slide-off">
@@ -106,20 +110,20 @@
                   Мотивирующие фитнес-браслеты помогут найти в себе силы
                   не пропускать занятия и соблюдать диету.
                 </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <ul class="slide-toggles">
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 1</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 2</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 3</button></li>
-                </ul>
-                <table class="preview-table">
-                  <tr class="preview-table-head">
-                    <th>Без подзарядки</th>
-                  </tr>
-                  <tr class="preview-table-content">
-                    <td>48 часов</td>
-                  </tr>
-                </table>
+                <div class="toggles-wrapper">
+                  <a href="#" class="button preview-more">Подробнее</a>
+                  <ul class="slide-toggles">
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 1</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 2</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 3</button></li>
+                  </ul>
+                </div>
+                <dl class="defenition-list">
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Без подзарядки</dt>
+                    <dd class="defenition-description">48 часов</dd>
+                  </div>
+                </dl>
               </div>
             </li>
             <li class="preview-slide preview-slide-off">
@@ -133,24 +137,28 @@
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <ul class="slide-toggles">
-                  <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 1</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 2</button></li>
-                  <li class="slide-item"><button type="button" class="slide-toggle">Слайд 3</button></li>
-                </ul>
-                <table class="preview-table">
-                  <tr class="preview-table-head">
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                  <tr class="preview-table-content">
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                </table>
+                <div class="toggles-wrapper">
+                  <a href="#" class="button preview-more">Подробнее</a>
+                  <ul class="slide-toggles">
+                    <li class="slide-item"><button type="button" class="slide-toggle slide-active">Слайд 1</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 2</button></li>
+                    <li class="slide-item"><button type="button" class="slide-toggle">Слайд 3</button></li>
+                  </ul>
+                </div>
+                <dl class="defenition-list">
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Длина палки</dt>
+                    <dd class="defenition-description">8,5 м</dd>
+                  </div>
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Вес палки</dt>
+                    <dd class="defenition-description">5 кг</dd>
+                  </div>
+                  <div class="defenition-wrapper">
+                    <dt class="defenition-termin">Материал</dt>
+                    <dd class="defenition-description">Карбон</dd>
+                  </div>
+                </dl>
               </div>
             </li>
           </ul>
@@ -281,38 +289,36 @@
     </main>
     <footer class="footer">
       <div class="wrapper">
-        <div class="footer-content">
-          <section class="footer-logo-section">
-            <h2 class="visually-hidden">Подвал логотип</h2>
-            <a href="#" class="footer-logo">
-            </a>
-            <div>
-              <a href="#" class="footer-login">Войти</a>
-              <a href="#" class="footer-compare">Сравнить</a>
-              <a href="#" class="footer-bucket">Корзина</a>
-            </div>
-          </section>
-          <section class="footer-navigation">
-            <h2 class="visually-hidden">Навигация и социальные сети</h2>
-            <p class="footer-address">Санкт-Петербург, набережная <br>
-              реки Карповки, 5, литера П.</p>
-            <ul class="footer-list">
-              <li class="footer-item"><a href="#" class="footer-link">Доставка</a></li>
-              <li class="footer-item"><a href="#" class="footer-link">Гарантия</a></li>
-              <li class="footer-item"><a href="#" class="footer-link">Контакты</a></li>
-            </ul>
-            <a href="tel:+78005558628" class="footer-phone">Тел.: +7 800 555-86-28</a>
-          </section>
-          <section class="footer-contacts">
-            <h2 class="visually-hidden">Авторизация и копирайт</h2>
-            <ul class="footer-socials">
-              <li class="social-item"><a href="#" class="facebook">Facebook</a></li>
-              <li class="social-item"><a href="#" class="instagram">Instagram</a></li>
-              <li class="social-item"><a href="#" class="twitter">Twitter</a></li>
-            </ul>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">https://htmlacademy.ru/</a>
-          </section>
-        </div>
+        <section class="footer-logo-section">
+          <h2 class="visually-hidden">Подвал логотип</h2>
+          <a href="#" class="footer-logo">
+          </a>
+          <ul class="user-navigation">
+            <li><a href="#" class="footer-login">Войти</a></li>
+            <li><a href="#" class="footer-compare">Сравнить</a></li>
+            <li><a href="#" class="footer-bucket">Корзина</a></li>
+          </ul>
+        </section>
+        <section class="footer-navigation">
+          <h2 class="visually-hidden">Навигация и социальные сети</h2>
+          <p class="footer-address">Санкт-Петербург, набережная <br>
+            реки Карповки, 5, литера П.</p>
+          <ul class="footer-list">
+            <li class="footer-item"><a href="#" class="footer-link">Доставка</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Гарантия</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Контакты</a></li>
+          </ul>
+          <a href="tel:+78005558628" class="footer-phone">Тел.: +7 800 555-86-28</a>
+        </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Авторизация и копирайт</h2>
+          <ul class="footer-socials">
+            <li class="social-item"><a href="#" class="facebook">Facebook</a></li>
+            <li class="social-item"><a href="#" class="instagram">Instagram</a></li>
+            <li class="social-item"><a href="#" class="twitter">Twitter</a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">https://htmlacademy.ru/</a>
+        </section>
       </div>
     </footer>
     <section class="popup map-popup visually-hidden">

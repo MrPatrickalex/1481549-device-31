@@ -182,9 +182,8 @@ ul {
 }
 
 .header-section {
-  /* В след. задании переделаю на flex */
   display: flex;
-  /* grid-template-columns: 600px 260px 140px 160px; */
+  justify-content: space-between;
   margin-top: 20px;
   line-height: 20px;
 }
@@ -204,19 +203,28 @@ ul {
   opacity: 0.3;
 }
 
+.search-wrapper {
+  display: flex;
+  height: 50px;
+  width: 440px;
+}
+
 .search-wrapper .search-button {
   visibility: hidden;
 }
 
-.header-search:focus + .search-button {
-  visibility: visible;
-}
-
 .header-search {
-  background-color: transparent ;
+  width: 356px;
+  background-color: transparent;
+  border: none;
+  padding-left: 38px;
   background-image: url('../img/icons/search.svg');
   background-repeat: no-repeat;
-  border: none;
+  background-position: 0 17px;
+}
+
+.header-search:focus + .search-button {
+  visibility: visible;
 }
 
 .header-search::placeholder {
@@ -233,12 +241,15 @@ ul {
 
 .header-search:focus {
   outline: none;
+  border-bottom: 2px solid var(--basic-black);
 }
 
 .search-button {
+  width: 84px;
+  height: 50px;
   background-color: transparent;
   outline: none;
-  border: none;
+  border: 2px solid var(--basic-black);
 }
 
 .search-button:hover {
@@ -251,21 +262,58 @@ ul {
   color: var(--white-30);
 }
 
+.links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+
+
 .login-link {
-  margin-left: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.login-link::before {
+  display: block;
+  content: "";
+  width: 13px;
+  height: 14px;
+  margin-right: 11px;
   background-image: url('../img/icons/user.svg');
   background-repeat: no-repeat;
 }
 
 
 .compare-link {
-  margin-left: 215px;
+  display: flex;
+  align-items: center;
+  margin-left: 213px;
+}
+
+.compare-link::before {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
   background-image: url('../img/icons/compare.svg');
   background-repeat: no-repeat;
 }
 
 .bucket-link {
+  display: flex;
+  align-items: center;
   margin-left: 40px;
+}
+
+.bucket-link::before {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
   background-image: url('../img/icons/bucket.svg');
   background-repeat: no-repeat;
 }
@@ -311,17 +359,14 @@ ul {
 }
 
 .navigation-list {
-  /* В след. задании переделаю на flex */
-  display: grid;
-  grid-template-columns: 600px 160px 140px 160px;
+  display: flex;
+  /* пока выключу wrap, потому что сетка ломается, потом с pixel perfect буду фиксить*/
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
   margin: 0;
   padding: 0;
 }
 
-.navigation-list {
-  margin: 0;
-  padding: 0;
-}
 
 .navigation-item {
   font-family: "Gilroy", Arial, sans-serif;
@@ -329,6 +374,7 @@ ul {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -338,12 +384,34 @@ ul {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+  letter-spacing: normal;
 }
 
 .navigation-item:first-child {
+  display: flex;
+}
+
+.navigation-item:first-child::after {
+  display: block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  margin-left: 16px;
   background-image: url('../img/icons/add.svg');
   background-repeat: no-repeat;
-  background-position: 200px 0;
+  background-position: center;
+}
+
+.navigation-item:nth-child(2) {
+  margin-left: 286px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-left: 38px;
+}
+
+.navigation-item:nth-child(4) {
+  margin-left: 111px;
 }
 
 .navigation-catalog {
@@ -382,6 +450,7 @@ ul {
 .preview-slide {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
   align-items: center;
   position: relative;
   background-image:
@@ -390,7 +459,7 @@ ul {
       var(--special-yellow) 146px,
       var(--basic-white) 147px
     );
-  z-index: -2;
+  z-index: 0;
 }
 
 .preview-slide-off {
@@ -428,7 +497,12 @@ ul {
   content: "0" counter(section);
 }
 
+.preview-slide:nth-child(1) .slide-image {
+  margin-left: 30px;
+}
+
 .slide-content {
+  width: 500px;
   margin-top: 110px;
 }
 
@@ -458,9 +532,22 @@ ul {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+  margin-top: 30px;
+}
+
+.toggles-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.slide-toggles {
+  display: flex;
 }
 
 .slide-toggle {
+  margin: 0;
+  padding: 0;
   outline: none;
   border: none;
   background-color: transparent;
@@ -470,6 +557,44 @@ ul {
 
 .slide-active {
   background-image: url('../img/slider/slider-button-on.svg');
+}
+
+.defenition-list {
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+  margin-top: 60px;
+}
+
+.defenition-termin {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.defenition-description {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.defenition-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.defenition-wrapper dt {
+  order: 2;
 }
 
 /* Категории товаров */
@@ -692,13 +817,15 @@ ul {
 /* Footer Футер */
 
 .footer {
-  margin-top: 100px;
   background-color: var(--basic-dark);
 }
 
 .footer-logo-section,
 .footer-navigation,
-.footer-contacts {
+.footer-contacts,
+.user-navigation,
+.footer-list,
+.footer-socials {
   display: flex;
   justify-content: space-between;
 }
@@ -721,6 +848,14 @@ ul {
 
 .footer-logo:active {
   opacity: 0.3;
+}
+
+.footer-item:nth-child(2) {
+  margin-left: 10px;
+}
+
+.footer-item:nth-child(3) {
+  margin-left: 10px;
 }
 
 
