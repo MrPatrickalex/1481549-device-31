@@ -15,17 +15,19 @@
       <div class="wrapper">
         <div class="main-header-wrapper">
           <div class="main-header-content">
-            <a href="#" class="header-logo"></a>
+            <a href="index.html" class="header-logo"></a>
             <section class="header-section">
               <h2 class="visually-hidden">Шапка</h2>
               <div class="search-wrapper">
                 <input type="text" id="search-input" placeholder="Поиск по сайту" class="header-search"/>
                 <button type="button" class="search-button">Искать</button>
               </div>
-              <a href="#" class="user-link">Валентин Петухов</a>
-              <a href="#" class="signout-link">Выйти</a>
-              <a href="#" class="compare-link">Сравнить</a>
-              <a href="#" class="bucket-link">Корзина</a>
+              <div class="links-wrapper catalog-links">
+                <a href="#" class="user-link">Валентин Петухов</a>
+                <a href="#" class="signout-link">Выйти</a>
+                <a href="#" class="compare-link">Сравнить</a>
+                <a href="#" class="bucket-link">Корзина</a>
+              </div>
             </section>
             <nav class="main-navigation">
               <ul class="navigation-list">
@@ -151,65 +153,75 @@
             <a href="#" class="sort-up sort-updown-active">по возростанию</a>
             <a href="#" class="sort-down">по убыванию</a>
           </section>
-          <section class="catalog-products">
-            <h2 class="visually-hidden">Товары</h2>
-            <ul class="products-list">
-              <li class="product-item">
-                <article class="product-article">
-                  <h3 class="product-header"><a href="#">Любительская селфи-палка</a></h3>
-                  <img class="product-image" src="img/items/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <div class="product-buttons">
-                    <a class="button button-to-bucket" href="#">В корзину</a>
-                    <a class="button-to-compare" href="#">Добавить к сравнению</a>
-                  </div>
-                  <p class="product-price">1100 руб.</p>
-                </article>
-              </li>
-              <li class="product-item">
-                <article class="product-article">
-                  <h3 class="product-header"><a href="#">Профессиональная селфи-палка</a></h3>
-                  <img class="product-image" src="img/items/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <div class="product-buttons">
-                    <a class="button button-to-bucket" href="#">В корзину</a>
-                    <a class="button-to-compare" href="#">Добавить к сравнению</a>
-                  </div>
-                  <p class="product-price">1500 руб.</p>
-                </article>
-              </li>
-              <li class="product-item">
-                <article class="product-article">
-                  <h3 class="product-header"><a href="#">Непотопляемая селфи-палка</a></h3>
-                  <img class="product-image" src="img/items/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <div class="product-buttons">
-                    <a class="button button-to-bucket" href="#">В корзину</a>
-                    <a class="button-to-compare" href="#">Добавить к сравнению</a>
-                  </div>
-                  <p class="product-price">1500 руб.</p>
-                </article>
-              </li>
-              <li class="product-item">
-                <article class="product-article">
-                  <h3 class="product-header"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-                  <img class="product-image" src="img/items/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                  <div class="product-buttons">
-                    <a class="button button-to-bucket" href="#">В корзину</a>
-                    <a class="button-to-compare" href="#">Добавить к сравнению</a>
-                  </div>
-                  <p class="product-price">1900 руб.</p>
-                </article>
-              </li>
-            </ul>
-          </section>
-          <section class="catalog-pagination">
-            <h2 class="visually-hidden">Навигация</h2>
-            <a href="#" class="pagination-backword">Назад</a>
-            <ul class="pagination-list">
-              <li class="pagination-item">1</li>
-              <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-              <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-            </ul>
-            <a href="#" class="pagination-forword">Вперед</a>
-          </section>
+          <div class="products-content">
+            <section class="catalog-products">
+              <h2 class="visually-hidden">Товары</h2>
+              <ul class="products-list">
+                <li class="product-item">
+                  <article class="product-article">
+                    <div class="header-wrapper">
+                      <h3 class="product-header"><a href="#">Любительская селфи-палка</a></h3>
+                      <p class="product-price">1100 руб.</p>
+                    </div>
+                    <img class="product-image" src="img/items/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="product-buttons">
+                      <a class="button button-to-bucket" href="#">В корзину</a>
+                      <a class="button-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </article>
+                </li>
+                <li class="product-item">
+                  <article class="product-article">
+                    <div class="header-wrapper">
+                      <h3 class="product-header"><a href="#">Профессиональная селфи-палка</a></h3>
+                      <p class="product-price">1500 руб.</p>
+                    </div>
+                    <img class="product-image" src="img/items/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <div class="product-buttons">
+                      <a class="button button-to-bucket" href="#">В корзину</a>
+                      <a class="button-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </article>
+                </li>
+                <li class="product-item">
+                  <article class="product-article">
+                    <div class="header-wrapper">
+                      <h3 class="product-header"><a href="#">Непотопляемая селфи-палка</a></h3>
+                      <p class="product-price">1500 руб.</p>
+                    </div>
+                    <img class="product-image" src="img/items/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="product-buttons">
+                      <a class="button button-to-bucket" href="#">В корзину</a>
+                      <a class="button-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </article>
+                </li>
+                <li class="product-item">
+                  <article class="product-article">
+                    <div class="header-wrapper">
+                      <h3 class="product-header"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+                      <p class="product-price">1900 руб.</p>
+                    </div>
+                    <img class="product-image" src="img/items/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                    <div class="product-buttons">
+                      <a class="button button-to-bucket" href="#">В корзину</a>
+                      <a class="button-to-compare" href="#">Добавить к сравнению</a>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+            <section class="catalog-pagination">
+              <h2 class="visually-hidden">Навигация</h2>
+              <a href="#" class="pagination-backword">Назад</a>
+              <ul class="pagination-list">
+                <li class="pagination-item">1</li>
+                <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+              </ul>
+              <a href="#" class="pagination-forword">Вперед</a>
+            </section>
+          </div>
         </div>
         <div class="right-column">
           <div class="column-header"></div>
