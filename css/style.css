@@ -218,8 +218,6 @@ ul {
 }
 
 .header-search {
-  display: flex;
-  align-items: center;
   width: 356px;
   padding-left: 38px;
   background-color: transparent;
@@ -237,7 +235,6 @@ ul {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  line-height: 20px;
   color: var(--black-30);
 }
 
