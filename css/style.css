@@ -448,19 +448,6 @@ ul {
   background-position: center center;
 }
 
-/* .navigation-item:nth-child(1) {
-  min-width: 255px;
-  margin-right: 285px;
-}
-
-.navigation-item:nth-child(2) {
-  margin-right: 35px;
-}
-
-.navigation-item:nth-child(3) {
-  padding-right: 107px;
-} */
-
 .navigation-catalog {
   position: absolute;
   z-index: 2;
@@ -860,6 +847,15 @@ ul {
   background-color: var(--basic-grey-light);
 }
 
+.advantages .wrapper {
+  width: 1200px;
+  padding: 0;
+  padding-left: 20px;
+  position: relative;
+  top: -100px;
+  display: flex;
+}
+
 .advantages-toggles,
 .advantages-list {
   margin: 0;
@@ -867,18 +863,12 @@ ul {
 }
 
 .advantages-toggles {
-  width: 430px;
+  flex-shrink: 0;
+  width: 284px;
   height: 320px;
   margin-right: 116px;
   padding-top: 80px;
   border-right: 7px solid var(--basic-black);
-}
-
-
-.advantages .wrapper {
-  position: relative;
-  top: -100px;
-  display: flex;
 }
 
 .advantages-toggles .button {
@@ -930,19 +920,22 @@ ul {
 
 .advantages-list {
   width: 100%;
+}
+
+.advantages-item {
   padding-top: 71px;
 }
 
 .advantages-item:nth-child(1) {
-  background: url("../img/service/delivery.svg") no-repeat 622px 0;
+  background: url("../img/service/delivery.svg") no-repeat 622px 71px;
 }
 
 .advantages-item:nth-child(2) {
-  background: url("../img/service/guarantee.svg") no-repeat 622px 0;
+  background: url("../img/service/guarantee.svg") no-repeat 605px 53px;
 }
 
 .advantages-item:nth-child(3) {
-  background: url("../img/service/credit.svg") no-repeat 622px 0;
+  background: url("../img/service/credit.svg") no-repeat 596px 48px;
 }
 
 /* Partners Партнеры */
