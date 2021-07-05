@@ -962,6 +962,9 @@ ul {
 }
 
 .partner-item img {
+  width: 260px;
+  height: 100px;
+  object-fit: contain;
   filter: grayscale(100%) opacity(25%);
 }
 
@@ -1334,6 +1337,16 @@ ul {
 }
 
 /* Map карта */
+
+.map-popup {
+  width: 960px;
+  height: 572px;
+}
+
+.map-popup div {
+  width: 100%;
+  height: 100%;
+}
 
 /* Write Us Напишите нам */
 
