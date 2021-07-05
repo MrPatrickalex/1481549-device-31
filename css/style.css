@@ -480,8 +480,14 @@ ul {
   background-color: var(--special-yellow);
 }
 
+.navigation-item:first-child {
+  width: 255px;
+}
+
 .navigation-item:first-child:hover .navigation-catalog {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .catalog-sublist-item:not(:last-child) {
