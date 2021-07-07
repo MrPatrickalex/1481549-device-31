@@ -280,14 +280,10 @@ ul {
 }
 
 .links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   line-height: 20px;
 }
-
-.index-links {
-  display: grid;
-  grid-template-columns: 281px 135px 84px;
-}
-
 
 .login-link {
   display: flex;
@@ -309,6 +305,7 @@ ul {
 .compare-link {
   display: flex;
   align-items: center;
+  margin-right: 43px;
 }
 
 .compare-link::before {
@@ -359,6 +356,14 @@ ul {
 .signout-link {
   display: flex;
   align-items: center;
+}
+
+.index-links .login-link {
+  margin-right: 214px;
+}
+
+.index-links .compare-link {
+  margin-right: 41px;
 }
 
 .catalog-links .user-link {
