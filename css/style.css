@@ -223,10 +223,6 @@ ul {
   margin-right: 100px;
 }
 
-.search-wrapper .search-button {
-  visibility: hidden;
-}
-
 .header-search {
   width: 356px;
   padding-left: 38px;
@@ -238,7 +234,7 @@ ul {
 }
 
 .header-search:focus + .search-button {
-  visibility: visible;
+  opacity: 1;
 }
 
 .header-search::placeholder {
@@ -262,11 +258,16 @@ ul {
 }
 
 .search-button {
+  opacity: 0; /* чтобы сделать кнопку доступной */
   width: 84px;
   height: 50px;
   background-color: transparent;
   outline: none;
   border: 2px solid var(--basic-black);
+}
+
+.search-button:focus {
+  opacity: 1;
 }
 
 .search-button:hover {
@@ -476,6 +477,7 @@ ul {
   width: 255px;
 }
 
+.navigation-item:first-child:focus-within .navigation-catalog,
 .navigation-item:first-child:hover .navigation-catalog {
   display: flex;
   flex-wrap: wrap;
@@ -541,6 +543,10 @@ ul {
 
 .preview-slide:nth-child(3) {
   margin-bottom: 115px;
+}
+
+.slide-off {
+  display: none;
 }
 
 .preview-slide.visually-hidden {
@@ -772,6 +778,10 @@ ul {
 
 .slide-active {
   background-image: url('../img/slider/slider-button-on.svg');
+}
+
+.slide-toggle:focus {
+  outline: 2px solid var(--basic-black);
 }
 
 /* Категории товаров */
@@ -1314,6 +1324,10 @@ ul {
   top: 50%;
   width: 960px;
   transform: translate(-50%, -50%);
+}
+
+.popup-hidden {
+  display: none;
 }
 
 .popup-close {
