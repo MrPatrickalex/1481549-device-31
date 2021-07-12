@@ -1592,18 +1592,6 @@ ul {
   border-top: 2px solid var(--basic-black);
 }
 
-.filter-label {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.filter-checkbox,
-.filter-radio {
-  display: none;
-}
-
 /* Стоимость */
 
 .filter-price {
@@ -1698,6 +1686,13 @@ ul {
   margin-bottom: 15px;
 }
 
+.filter-label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .filter-checkbox + .filter-label {
   display: block;
   padding-top: 2px;
@@ -1718,6 +1713,12 @@ ul {
 
 .filter-checkbox:checked:hover + .filter-label {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='22' height='22' rx='1' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.07692 10.75L5.38461 12.5L10.4615 17.75L18.9231 9L17.2308 7.25L10.4615 14.25L7.07692 10.75Z' fill='rgba(0, 0, 0, 0.6)'/%3E%3C/svg%3E");
+}
+
+.filter-checkbox:focus + .filter-label {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
+  opacity: 1;
 }
 
 /* Bluetooth Radio */
@@ -1764,6 +1765,12 @@ ul {
 
 .filter-radio:checked:hover + .filter-label {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11' stroke='rgba(0, 0, 0, 0.6)' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='4' fill='rgba(0, 0, 0, 0.6)'/%3E%3C/svg%3E");
+}
+
+.filter-radio:focus + .filter-label{
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
+  opacity: 1;
 }
 
 /* Filter show Показать */
@@ -1903,17 +1910,20 @@ ul {
 .product-buttons {
   position: absolute;
   z-index: 0;
-  display: none;
+  /* display: none; */
+  opacity: 0;
   width: 360px;
   height: 380px;
   background-color: var(--product-overlay);
 }
 
-.product-item:hover .product-buttons{
+.product-item:hover .product-buttons,
+.product-item:focus-within .product-buttons{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
 .button-to-bucket {
