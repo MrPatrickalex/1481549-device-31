@@ -542,7 +542,7 @@ ul {
 }
 
 .preview-slide:nth-child(3) {
-  margin-bottom: 115px;
+  margin-bottom: 116px;
 }
 
 .slide-off {
@@ -599,12 +599,12 @@ ul {
 }
 
 .preview-slide:nth-child(2) .slide-image {
-  margin-top: 44px;
+  margin-top: 43px;
   margin-left: 17px;
 }
 
 .preview-slide:nth-child(3) .slide-image {
-  margin-top: 12px;
+  margin-top: 14px;
   margin-left: 2px;
 }
 
@@ -1318,16 +1318,60 @@ ul {
 
 /* Popup Modal */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .popup {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  top: 100px;
+  left: 25%;
   width: 960px;
-  transform: translate(-50%, -50%);
+}
+
+.popup-show {
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .popup-hidden {
   display: none;
+}
+
+.popup-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .popup-close {
@@ -1355,6 +1399,7 @@ ul {
 .map-popup {
   width: 960px;
   height: 572px;
+  box-shadow: 0px 10px 16px var(--popup-shadow);
 }
 
 .map-popup div {
@@ -1412,6 +1457,8 @@ ul {
   background-color: var(--input-grey);
   border: none;
   outline: none;
+  padding-top: 2px;
+  padding-left: 10px;
 }
 
 .writeus-input:hover {

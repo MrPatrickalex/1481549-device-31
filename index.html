@@ -23,6 +23,7 @@
             <section class="header-section">
               <h2 class="visually-hidden">Шапка</h2>
               <div class="search-wrapper">
+                <label for="search-input" class="visually-hidden"></label>
                 <input type="text" id="search-input" placeholder="Поиск по сайту" class="header-search"/>
                 <button tabindex="0" type="button" class="search-button">Найти</button>
               </div>
@@ -96,7 +97,7 @@
                 </dl>
               </div>
             </li>
-            <li class="preview-slide slide-off">
+            <li class="preview-slide visually-hidden">
               <img class="slide-image" src="./img/slider/watch.png" width="345" height="485" alt="Изображение электронных часов">
               <div class="slide-content">
                 <h3 class="preview-header">
@@ -116,7 +117,7 @@
                 </dl>
               </div>
             </li>
-            <li class="preview-slide slide-off">
+            <li class="preview-slide visually-hidden">
               <img class="slide-image" src="./img/slider/selfi.png" width="384" height="486" alt="Изображение селфи палки">
               <div class="slide-content">
                 <h3 class="preview-header">
@@ -213,9 +214,9 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages-toggles">
-              <li><button type="button" class="button advantages-active">Доставка</button></li>
-              <li><button type="button" class="button">Гарантия</button></li>
-              <li><button type="button" class="button">Кредит</button></li>
+              <li><button type="button" class="button advantages-button advantages-active">Доставка</button></li>
+              <li><button type="button" class="button advantages-button">Гарантия</button></li>
+              <li><button type="button" class="button advantages-button">Кредит</button></li>
             </ul>
             <ul class="advantages-list">
               <li class="advantages-item">
@@ -321,29 +322,29 @@
           <ul class="footer-socials">
             <li class="social-item">
               <a href="#" aria-label="Facebook">
-                <img src="img/socials/facebook.svg" alt="Иконка Facebook">
+                <img src="img/socials/facebook.svg" width="32" height="32" alt="Иконка Facebook">
               </a>
             </li>
             <li class="social-item">
               <a href="#" aria-label="Instagram">
-                <img src="img/socials/instagram.svg" alt="Иконка Instagram">
+                <img src="img/socials/instagram.svg" width="32" height="32" alt="Иконка Instagram">
               </a>
             </li>
             <li class="social-item">
               <a href="#" aria-label="Twitter">
-                <img src="img/socials/twitter.svg" alt="Иконка Twitter">
+                <img src="img/socials/twitter.svg" width="32" height="32" alt="Иконка Twitter">
               </a>
             </li>
           </ul>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link" aria-label="https://htmlacademy.ru/">
-            <img src="img/logo_htmlacademy.svg" alt="Лого htmlacademy.ru">
+            <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="Лого htmlacademy.ru">
           </a>
         </section>
       </div>
     </footer>
     <section class="popup map-popup popup-hidden">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-big.jpg" width="960" height="573" alt="Изображение карты. Адрес Санкт-Петербург набережная Реки Карповки дом 5 корпус П">
+      <div id="map"></div>
       <button type="button" class="popup-close" aria-label="Закрыть окно"></button>
     </section>
     <section class="popup writeus-popup popup-hidden">
@@ -365,5 +366,8 @@
       </form>
       <button type="button" class="popup-close" aria-label="Закрыть окно"></button>
     </section>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8d9e9545-aa08-4c41-bdd3-dd01a9565dd4&lang=ru_RU"
+    type="text/javascript"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
