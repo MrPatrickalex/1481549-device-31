@@ -1,373 +1,261 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body class="page-body">
-    <header class="main-header">
-      <div class="wrapper">
-        <div class="header-wrapper header-index-wrapper">
-          <div class="main-header-content">
-            <a class="header-logo">
-              <svg role="img" aria-label="Логотип DEVICE" aria-hidden="true" focusable="false" width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701999V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.9767 26.6506 7.1033 25.101 5.526C23.5891 3.9527 21.7663 2.71131 19.7486 1.8808C17.7308 1.05029 15.5623 0.64884 13.381 0.701999H-0.151001ZM7.582 26.91V8.091H13.382C14.5845 8.0431 15.7838 8.24676 16.903 8.68896C18.0223 9.13116 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9552 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.091H55.669V0.701999H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701999H81.286L73.795 25.422L66.304 0.701999H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701999H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7792 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6018C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32423 118.173 8.60333 119.408 8.13252C120.643 7.66171 121.962 7.45114 123.282 7.514C124.893 7.49099 126.486 7.86172 127.921 8.594C129.263 9.27181 130.373 10.3326 131.111 11.642L137.781 7.802C136.294 5.39746 134.191 3.43379 131.691 2.114C129.109 0.720904 126.216 0.00268919 123.282 0.0259991C113.503 -0.246001 105.485 7.717 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.091H162.908V0.701999H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="black"/>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <nav class="main-navigation">
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="#"
+              class="main-navigation__link main-navigation__link--selected">Информация</a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Фото и видео</a></li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link"><img src="./img/logo.svg" alt="Лого"></a>
+          </li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Карта штата</a></li>
+          <li class="main-navigation__item"><a href="catalog.html" class="main-navigation__link">Гостиницы</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="index-main">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="promo">
+      <h2 class="visually-hidden">Промо</h2>
+    </section>
+    <section class="welcome">
+      <h2 class="welcome__header">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
+      <p class="welcome__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--blue">
+          <h3 class="advantages__header advantages__header--white">Настоящий <br> городок</h3>
+          <p class="advantages__number advantages__number--white">№1</p>
+          <p class="advantages__text advantages__text--white">Седона — не аттракцион для туристов, там <br>
+            течёт своя жизнь</p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/advantages/hotel1.jpg" width="800" height="256" alt="Двор, цветы и американский флаг">
+        </li>
+        <li class="advantages__item advantages__item--icons">
+          <h3 class="advantages__header advantages__header--black">Жильё</h3>
+          <img class="advantages__icon" src="./img/advantages/icon-home.svg" width="75" height="72" alt="Дом">
+          <p class="advantages__text advantages__text--black">Рекомендуем пожить в настоящем <br>
+            мотеле, всё как в кино!</p>
+        </li>
+        <li class="advantages__item advantages__item--icons">
+          <h3 class="advantages__header advantages__header--black">Еда</h3>
+          <img class="advantages__icon" src="./img/advantages/icon-burger.svg" width="75" height="70" alt="Бургер">
+          <p class="advantages__text advantages__text--black">Всегда заказывайте фирменный бургер, <br>
+            вы не разочаруетесь!</p>
+        </li>
+        <li class="advantages__item advantages__item--icons">
+          <h3 class="advantages__header advantages__header--black">Сувениры</h3>
+          <img class="advantages__icon" src="./img/advantages/icon-gift.svg" width="64" height="77"
+            alt="Подарочная коробка">
+          <p class="advantages__text advantages__text--black">Не только китайского, но и местного <br>
+            производства!</p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/advantages/hotel2.jpg" width="800" height="256" alt="Изображение каньона">
+        </li>
+        <li class="advantages__item advantages__item--blue">
+          <h3 class="advantages__header advantages__header--white">Там есть <br> Мост дьявола</h3>
+          <p class="advantages__number advantages__number--white">№2</p>
+          <p class="advantages__text advantages__text--white">Да, по нему можно пройти! Если конечно <br>
+            вы осмелитесь</p>
+        </li>
+        <li class="advantages__item advantages__item--gray">
+          <h3 class="advantages__header advantages__header--black">Небольшая <br> площадь</h3>
+          <p class="advantages__number advantages__number--black">№3</p>
+          <p class="advantages__text advantages__text--black">Все достопримечательности <br>
+            находятся очень близко</p>
+        </li>
+        <li class="advantages__item advantages__item--gray">
+          <h3 class="advantages__header advantages__header--black">Красивая <br>
+            дорога</h3>
+          <p class="advantages__number advantages__number--black">№4</p>
+          <p class="advantages__text advantages__text--black">Ехать в седону из лас-вегаса совсем <br>
+            не скучно!</p>
+        </li>
+        <li class="advantages__item advantages__item--gray">
+          <h3 class="advantages__header advantages__header--black">Мало <br>
+            туристов</h3>
+          <p class="advantages__number advantages__number--black">№5</p>
+          <p class="advantages__text advantages__text--black">Большинство едет в гранд каньон <br>
+            и толпится там</p>
+        </li>
+      </ul>
+    </section>
+    <section class="continue">
+      <h2 class="continue__header">Заинтересовались?</h2>
+      <p class="continue__text">Укажите предполагаемые даты поездки, <br>
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button type="button" class="continue__button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+    </section>
+    <div class="map-wrapper">
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="./img/map/map.png" alt="Карта">
+      </section>
+      <section class="hotel-search-modal">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="hotel-search-modal__label" for="start">Дата заезда:</label>
+          <div class="date-input">
+            <span>24 апреля 2017</span>
+            <button class="date-input__calendar" type="button">
+              <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                  fill="#A9A9A9" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"
+                  fill="#A9A9A9" />
               </svg>
-            </a>
-            <section class="header-section">
-              <h2 class="visually-hidden">Шапка</h2>
-              <div class="search-wrapper">
-                <label for="search-input" class="visually-hidden"></label>
-                <input type="text" id="search-input" placeholder="Поиск по сайту" class="header-search"/>
-                <button tabindex="0" type="button" class="search-button">Найти</button>
-              </div>
-              <div class="links-wrapper index-links">
-                <a href="#" class="login-link">Войти</a>
-                <a href="#" class="compare-link">Сравнить</a>
-                <a href="#" class="bucket-link">Корзина</a>
-              </div>
-            </section>
-            <nav class="main-navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a href="catalog.html">Каталог товаров</a>
-                  <ul class="navigation-catalog">
-                    <li class="catalog-sublist-item">
-                      <ul class="catalog-sublist">
-                        <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-                        <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
-                        <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-                      </ul>
-                    </li>
-                    <li class="catalog-sublist-item">
-                      <ul class="catalog-sublist">
-                        <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-                        <li class="catalog-item"><a href="#">Умные часы</a></li>
-                      </ul>
-                    </li>
-                    <li class="catalog-sublist-item">
-                      <ul class="catalog-sublist">
-                        <li class="catalog-item"><a href="#">Квадрокоптер</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-item"><a href="#">Доставка</a></li>
-                <li class="navigation-item"><a href="#">Гарантия</a></li>
-                <li class="navigation-item"><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
+            </button>
           </div>
-        </div>
-      </div>
-    </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Device</h1>
-      <section class="main-preview">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Слайды</h2>
-          <ul class="preview-slides">
-            <li class="preview-slide">
-              <img class="slide-image" src="./img/slider/dron.png" width="526" height="334" alt="Изображение дрона с лазером">
-              <div class="slide-content">
-                <h3 class="preview-header">
-                  Порхает как бабочка,
-                  жалит как пчела!
-                </h3>
-                <p class="preview-description">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-                  мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <dl class="defenition-list">
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Дальность полета</dt>
-                    <dd class="defenition-description">800 м</dd>
-                  </div>
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Радиус поражения</dt>
-                    <dd class="defenition-description">50 м</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-            <li class="preview-slide visually-hidden">
-              <img class="slide-image" src="./img/slider/watch.png" width="345" height="485" alt="Изображение электронных часов">
-              <div class="slide-content">
-                <h3 class="preview-header">
-                  Худеем <br>
-                  правильно!
-                </h3>
-                <p class="preview-description">
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-                  не пропускать занятия и соблюдать диету.
-                </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <dl class="defenition-list">
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Без подзарядки</dt>
-                    <dd class="defenition-description">48 часов</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-            <li class="preview-slide visually-hidden">
-              <img class="slide-image" src="./img/slider/selfi.png" width="384" height="486" alt="Изображение селфи палки">
-              <div class="slide-content">
-                <h3 class="preview-header">
-                  Делай селфи, <br>
-                  как Бен Стиллер!
-                </h3>
-                <p class="preview-description">
-                  Самая длинная палка для селфи доступна в нашем магазине. <br>
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a href="#" class="button preview-more">Подробнее</a>
-                <dl class="defenition-list">
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Длина палки</dt>
-                    <dd class="defenition-description">8,5 м</dd>
-                  </div>
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Вес палки</dt>
-                    <dd class="defenition-description">5 кг</dd>
-                  </div>
-                  <div class="defenition-wrapper">
-                    <dt class="defenition-termin">Материал</dt>
-                    <dd class="defenition-description">Карбон</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-          </ul>
-          <ul class="slide-toggles">
-            <li class="slide-item"><button type="button" class="slide-toggle" aria-label="Слайд 1"></button></li>
-            <li class="slide-item"><button type="button" class="slide-toggle" aria-label="Слайд 2"></button></li>
-            <li class="slide-item"><button type="button" class="slide-toggle slide-active" aria-label="Слайд 3"></button></li>
-          </ul>
-        </div>
+          <label class="hotel-search-modal__label" for="end">Дата выезда:</label>
+          <div class="date-input">
+            <span>4 июля 2017</span>
+            <button class="date-input__calendar" type="button">
+              <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
+                  fill="#A9A9A9" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"
+                  fill="#A9A9A9" />
+              </svg>
+            </button>
+          </div>
+          <label class="hotel-search-modal__label" for="mature">Взрослые:</label>
+          <div class="count-input">
+            <button class="count-input__decrease" type="button">
+              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9" />
+              </svg>
+            </button>
+            <span>2</span>
+            <button class="count-input__increase" type="button">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                  fill="#A9A9A9" />
+              </svg>
+            </button>
+          </div>
+          <label class="hotel-search-modal__label" for="children">Дети:</label>
+          <div class="count-input">
+            <button class="count-input__decrease" type="button">
+              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9" />
+              </svg>
+            </button>
+            <span>0</span>
+            <button class="count-input__increase" type="button">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                  fill="#A9A9A9" />
+              </svg>
+            </button>
+          </div>
+          <button type="submit" class="hotel-search-modal__submit">Найти</button>
+        </form>
       </section>
-      <section class="category-section">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Категории товаров</h2>
-          <ul class="category-list">
-            <li class="category-item">
-              <a href="#" class="category-link">
-                <div class="image-wrapper">
-                  <img src="img/category/vr.svg" width="97" height="55" alt="Иконка шлема виртуальной реальности">
-                </div>
-                <p>Виртуальная <br>
-                  реальность</p>
-              </a>
-            </li>
-            <li class="category-item">
-              <a href="#" class="category-link ">
-                <div class="image-wrapper">
-                  <img src="img/category/monopod.svg" width="86" height="117" alt="Иконка селфи палки">
-                </div>
-                <p>Моноподы <br>
-                  для селфи</p>
-              </a>
-            </li>
-            <li class="category-item">
-              <a href="#" class="category-link">
-                <div class="image-wrapper">
-                  <img src="img/category/camera.svg" width="71" height="87" alt="Иконка камеры">
-                </div>
-                <p>Экшн-камеры</p>
-              </a>
-            </li>
-            <li class="category-item">
-              <a href="#" class="category-link">
-                <div class="image-wrapper">
-                  <img src="img/category/brace.svg" width="107" height="65" alt="Иконка фитнес-браслета">
-                </div>
-                <p>Фитнес-браслеты</p>
-              </a>
-            </li>
-            <li class="category-item">
-              <a href="#" class="category-link">
-                <div class="image-wrapper">
-                  <img src="img/category/watch.svg" width="56" height="98" alt="Иконка электронных часов">
-                </div>
-                <p>Умные часы</p>
-              </a>
-            </li>
-            <li class="category-item">
-              <a href="#" class="category-link">
-                <div class="image-wrapper">
-                  <img src="img/category/dron.svg" width="132" height="69" alt="Иконка квадрокоптера">
-                </div>
-                <p>Квадрокоптеры</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="footer__hashtag">#visitSEDONA</p>
+        <a class="footer__phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </section>
-      <section class="advantages">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="advantages-toggles">
-              <li><button type="button" class="button advantages-button advantages-active">Доставка</button></li>
-              <li><button type="button" class="button advantages-button">Гарантия</button></li>
-              <li><button type="button" class="button advantages-button">Кредит</button></li>
-            </ul>
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <h3 class="advantages-header">Доставка</h3>
-                <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо к вашему <br>
-                  подъезду совершенно бесплатно! Ведь мы неплохо <br>
-                  заработаем, поднимая его на ваш этаж.
-                </p>
-              </li>
-              <li class="advantages-item visually-hidden">
-                <h3 class="advantages-header">Гарантия</h3>
-                <p class="advantages-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
-                  не переживайте, мы выдадим вам новый. <br>
-                  Товар, не дом, конечно же.</p>
-              </li>
-              <li class="advantages-item visually-hidden">
-                <h3 class="advantages-header">Кредит</h3>
-                <p class="advantages-description">Залезть в долговую яму стало проще! Кредитные консультанты <br>
-                  подберут для вас наиболее выгодные <br>
-                  условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </li>
-            </ul>
-        </div>
+      <section class="footer__socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                  fill="white" />
+              </svg>
+            </a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-svg" width="12" height="22" viewBox="0 0 12 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+              </svg>
+            </a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-svg" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                  fill="white" />
+              </svg>
+            </a></li>
+        </ul>
       </section>
-      <section class="partners">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Наши партнеры</h2>
-          <ul class="partners-list">
-            <li class="partner-item">
-              <a href="#">
-                <img src="img/partners/dji.png" width="260" height="100" alt="Партнер DJI">
-              </a>
-            </li>
-            <li class="partner-item">
-              <a href="#">
-                <img src="img/partners/spgadgets.png" width="260" height="100" alt="Партнер SPGadgets">
-              </a>
-            </li>
-            <li class="partner-item">
-              <a href="#">
-                <img src="img/partners/gopro.png" width="260" height="100" alt="Партнер GOPRO">
-              </a>
-            </li>
-            <li class="partner-item">
-              <a href="#">
-                <img src="img/partners/vive.png" width="260" height="100" alt="Партнер VIVE">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <section class="footer__copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <p class="footer__website-by">Website by</p>
+        <a class="footer__htmlacademy" href="htmlacademy.ru">
+          <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black" />
+            <path
+              d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z"
+              fill="black" />
+            <path
+              d="M26.6171 4.82696H21.8082V1.07349H19.7778V4.82696H17.8542V6.80022H19.7778V12.7843C19.7778 14.5002 20.7396 15.4439 22.4708 15.4439H26.6171V13.4492H22.8769C22.193 13.4492 21.8082 13.0632 21.8082 12.3983V6.80022H26.6171V4.82696Z"
+              fill="black" />
+            <path
+              d="M41.1215 4.54712C39.497 4.54712 38.2576 5.34071 37.5736 6.60618H37.5095C36.8897 5.36217 35.7356 4.54712 34.154 4.54712C32.7434 4.54712 31.6746 5.29781 31.0336 6.3488H30.948V4.82596H29.0031V15.4429H31.0336V9.99504C31.0336 8.00032 32.0806 6.54184 33.6624 6.49894C35.1584 6.45604 36.0347 7.52847 36.0347 9.13708V15.4429H38.0652V9.82343C38.0652 7.44266 39.4758 6.49894 40.6941 6.49894C42.1688 6.49894 43.0452 7.52847 43.0452 9.13708V15.4429H45.0754V8.92261C45.0754 6.3488 43.6221 4.54712 41.1215 4.54712Z"
+              fill="black" />
+            <path
+              d="M47.8271 12.6975C47.8271 14.4348 48.8103 15.4429 50.6269 15.4429H52.6359V13.4696H50.9261C50.2422 13.4696 49.8574 13.0835 49.8574 12.4186V0H47.8271V12.6975Z"
+              fill="black" />
+            <path
+              d="M28.9048 19.6888H28.8192C28.027 18.6227 26.7425 17.8764 25.0295 17.8551C21.882 17.8124 19.6338 20.1365 19.6338 23.4202C19.6338 26.7252 21.9248 29.0494 25.008 29.0068C26.7637 28.9853 28.027 28.1965 28.8192 27.0663H28.9048V28.7081H30.9177V18.1536H28.9048V19.6888ZM25.3077 27.0451C23.081 27.0451 21.6679 25.4245 21.6679 23.4202C21.6679 21.4159 23.081 19.7954 25.3077 19.7954C27.4703 19.7954 28.8836 21.4159 28.8836 23.4202C28.8836 25.4033 27.4703 27.0451 25.3077 27.0451Z"
+              fill="black" />
+            <path
+              d="M44.2095 21.9915C43.717 19.6034 41.5973 17.855 38.8139 17.855C35.4524 17.855 33.2042 20.307 33.2042 23.4201C33.2042 26.5331 35.4524 29.0067 38.8139 29.0067C41.5973 29.0067 43.717 27.2155 44.2095 24.8061H42.0898C41.6617 26.1494 40.3984 27.0662 38.8354 27.0662C36.6513 27.0662 35.2381 25.4244 35.2381 23.4201C35.2381 21.4158 36.6513 19.7953 38.8354 19.7953C40.4625 19.7953 41.6617 20.7548 42.0898 21.9915H44.2095Z"
+              fill="black" />
+            <path
+              d="M55.0836 19.6888H54.998C54.2058 18.6227 52.921 17.8764 51.2081 17.8551C48.0607 17.8124 45.8125 20.1365 45.8125 23.4202C45.8125 26.7252 48.1036 29.0494 51.1866 29.0068C52.9425 28.9853 54.2058 28.1965 54.998 27.0663H55.0836V28.7081H57.0962V18.1536H55.0836V19.6888ZM51.4866 27.0451C49.2596 27.0451 47.8466 25.4245 47.8466 23.4202C47.8466 21.4159 49.2596 19.7954 51.4866 19.7954C53.6491 19.7954 55.0622 21.4159 55.0622 23.4202C55.0622 25.4033 53.6491 27.0451 51.4866 27.0451Z"
+              fill="black" />
+            <path
+              d="M68.6538 19.7953H68.5682C67.776 18.6652 66.4483 17.8763 64.7568 17.855C61.6738 17.8123 59.3827 20.1365 59.3827 23.4415C59.3827 26.7251 61.6309 29.0493 64.7783 29.0067C66.4483 28.9853 67.776 28.239 68.5468 27.1729H68.6538V28.708H70.6665V13.356H68.6538V19.7953ZM65.0568 27.0662C62.8298 27.0662 61.4168 25.4458 61.4168 23.4415C61.4168 21.4372 62.8298 19.8166 65.0568 19.8166C67.2193 19.8166 68.6324 21.4585 68.6324 23.4415C68.6324 25.4458 67.2193 27.0662 65.0568 27.0662Z"
+              fill="black" />
+            <path
+              d="M78.3297 17.855C75.0752 17.855 72.8483 20.3497 72.8483 23.4414C72.8483 26.4479 74.9467 29.0067 78.3724 29.0067C80.8561 29.0067 82.8475 27.6633 83.5541 25.4244H81.4342C80.9634 26.4267 79.8286 27.0662 78.4582 27.0662C76.5312 27.0662 75.1608 25.7869 75.0108 24.1451H83.7682C84.0464 20.6269 81.8412 17.855 78.3297 17.855ZM78.2868 19.7953C79.9783 19.7953 81.2416 20.8401 81.5627 22.354H75.0538C75.3534 20.8614 76.6168 19.7953 78.2868 19.7953Z"
+              fill="black" />
+            <path
+              d="M98.1985 17.8762C96.5713 17.8762 95.3295 18.6651 94.6443 19.9232H94.5799C93.9591 18.6865 92.8029 17.8762 91.2184 17.8762C89.8054 17.8762 88.7347 18.6225 88.0924 19.6673H88.0068V18.1534H86.0583V28.7079H88.0924V23.2921C88.0924 21.3091 89.1417 19.8592 90.7261 19.8165C92.2247 19.7739 93.1028 20.84 93.1028 22.4392V28.7079H95.1368V23.1215C95.1368 20.7547 96.5499 19.8165 97.7703 19.8165C99.2477 19.8165 100.125 20.84 100.125 22.4392V28.7079H102.16V22.226C102.16 19.6673 100.704 17.8762 98.1985 17.8762Z"
+              fill="black" />
+            <path
+              d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z"
+              fill="black" />
+          </svg>
+        </a>
       </section>
-      <div class="about-contacts wrapper">
-        <section class="about">
-          <h2 class="about-header">О нас</h2>
-          <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, <br>
-            который есть в каждом из нас.</p>
-          <p class="about-description">Мы можем доставить ваш товар в самые отдаленные точки <br>
-            России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="about-list">
-            <li class="about-item">Деловые линии</li>
-            <li class="about-item">Автотрейдинг</li>
-            <li class="about-item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a href="#" class="button about-more">Подробнее о нас</a>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts-header">Контакты</h2>
-          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
-            проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="https://yandex.ru/maps/-/CCUeJOvIPC" class="map-reference"><img src="img/map.jpg" width="560" height="222" alt="Изображение карты. Адрес Санкт-Петербург набережная Реки Карповки дом 5 корпус П"></a>
-          <a href="#" class="button write-us">Напишите нам</a>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <section class="footer-logo-section">
-          <h2 class="visually-hidden">Подвал логотип</h2>
-          <a class="footer-logo">
-            <svg role="img" aria-label="Логотип DEVICE" aria-hidden="true" focusable="false" width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701999V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.9767 26.6506 7.1033 25.101 5.526C23.5891 3.9527 21.7663 2.71131 19.7486 1.8808C17.7308 1.05029 15.5623 0.64884 13.381 0.701999H-0.151001ZM7.582 26.91V8.091H13.382C14.5845 8.0431 15.7838 8.24676 16.903 8.68896C18.0223 9.13116 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9552 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.091H55.669V0.701999H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701999H81.286L73.795 25.422L66.304 0.701999H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701999H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7792 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6018C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32423 118.173 8.60333 119.408 8.13252C120.643 7.66171 121.962 7.45114 123.282 7.514C124.893 7.49099 126.486 7.86172 127.921 8.594C129.263 9.27181 130.373 10.3326 131.111 11.642L137.781 7.802C136.294 5.39746 134.191 3.43379 131.691 2.114C129.109 0.720904 126.216 0.00268919 123.282 0.0259991C113.503 -0.246001 105.485 7.717 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.091H162.908V0.701999H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="black"/>
-            </svg>
-          </a>
-          <ul class="user-navigation">
-            <li><a href="#" class="footer-login">Войти</a></li>
-            <li><a href="#" class="footer-compare">Сравнить</a></li>
-            <li><a href="#" class="footer-bucket">Корзина</a></li>
-          </ul>
-        </section>
-        <section class="footer-navigation">
-          <h2 class="visually-hidden">Навигация и социальные сети</h2>
-          <p class="footer-address">Санкт-Петербург, набережная <br>
-            реки Карповки, 5, литера П.</p>
-          <ul class="footer-list footer-list-position">
-            <li class="footer-item"><a href="#" class="footer-link">Доставка</a></li>
-            <li class="footer-item"><a href="#" class="footer-link">Гарантия</a></li>
-            <li class="footer-item"><a href="#" class="footer-link">Контакты</a></li>
-          </ul>
-          <a href="tel:+78005558628" class="footer-phone">Тел.: +7 800 555-86-28</a>
-        </section>
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Авторизация и копирайт</h2>
-          <ul class="footer-socials">
-            <li class="social-item">
-              <a href="#" aria-label="Facebook">
-                <img src="img/socials/facebook.svg" width="32" height="32" alt="Иконка Facebook">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" aria-label="Instagram">
-                <img src="img/socials/instagram.svg" width="32" height="32" alt="Иконка Instagram">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" aria-label="Twitter">
-                <img src="img/socials/twitter.svg" width="32" height="32" alt="Иконка Twitter">
-              </a>
-            </li>
-          </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link" aria-label="https://htmlacademy.ru/">
-            <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="Лого htmlacademy.ru">
-          </a>
-        </section>
-      </div>
-    </footer>
-    <section class="popup map-popup popup-hidden">
-      <h2 class="visually-hidden">Карта</h2>
-      <div id="map"></div>
-      <button type="button" class="popup-close" aria-label="Закрыть окно"></button>
-    </section>
-    <section class="popup writeus-popup popup-hidden">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="writeus-form">
-        <p class="writeus-name">
-          <label for="form-name" class="writeus-label">Ваше имя:</label>
-          <input type="text" name="name" id="form-name" placeholder="Имя Фамилия" class="writeus-input">
-        </p>
-        <p class="writeus-email">
-          <label for="form-email" class="writeus-label">Ваш e-mail:</label>
-          <input type="email" id="form-email" name="email" placeholder="email@example.com" class="writeus-input">
-        </p>
-        <p class="writeus-text">
-          <label for="form-text" class="writeus-label">Текст письма:</label>
-          <textarea name="text" id="form-text" placeholder="В свободной форме" class="writeus-input"></textarea>
-        </p>
-        <button type="submit" class="button writeus-submit">Отправить</button>
-      </form>
-      <button type="button" class="popup-close" aria-label="Закрыть окно"></button>
-    </section>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=8d9e9545-aa08-4c41-bdd3-dd01a9565dd4&lang=ru_RU"
-    type="text/javascript"></script>
-    <script src="js/index.min.js"></script>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
